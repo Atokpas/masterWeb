@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Main Page</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!-- <link rel="stylesheet" type="text/css" href="css/index.css"> -->
+	<link rel="stylesheet" type="text/css" href="css/all.css">
+	<link rel="icon" type="image/x-icon" href="image/icons8_32.png">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather">
+	<script type="text/javascript" src="js/all.js"></script>
+</head>
+<body>
+
+<!-- Header part -->
+	<header>
+
+		<div class="logo">
+			<a href="index.html"><img  src="image/icons8.png" width="70px" height="70px" > </a><!-- N logo icons, logos, symbols – free download PNG, SVG (2023) -->
+			<!-- reference logo -->
+
+			<!-- <h1 style="color:#B2AF8F;">Nischal</h1> -->
+		</div>
+		<!-- <hr> -->
+		<nav id="navbar">
+			<ul>
+				<li>
+					<a href="index.html">Home</a>
+				</li>
+				<li>
+					<a href="index.html" style="font-weight: bold; color: #309CEEC4;">About</a>
+				</li>
+				<!-- 
+				<li>
+					<a href="about.html">About</a>
+				</li> -->
+				
+				<li>
+					<a href="resume.html" >Resume</a>
+				</li>
+				
+				<li>
+					<a href="skills.html">Skills</a>
+				</li>
+				
+				<li>
+					<a href="contact.html" >Contact</a>
+				</li>
+				
+			</ul>
+		</nav>	
+
+	</header>
+<!-- <hr> -->
+
+
+<!-- Body Part	 -->
+	<main>
+		<div class="about-title">
+		<h1>About Me</h1>
+		</div>
+		<div class="myself">
+				
+			<div class="myself-img">
+				<img src="image/nischal_e.jpg">
+			</div>
+			<div class="myself-text">
+				<div class="about-Network">
+					<h1></h1>
+					<p> Network Engineers are responsible to connect the worlds and make worlds closer so one the reason I am on this field with few years of experience building, putting into place, and maintaining intricate network infrastructures. My love of networking and information technology inspired me to obtain a degree in computer science, following which I set out to establish a career in the sector. In a variety of fields, including LAN/WAN design, network security, routing and switching, firewall setups, network analysis and solving problems, and cloud technologies, I am looking to gain vast knowledge implement on real world so, that I can have practical knowledge on upcoming years.
+					<br>
+					<br>
+					Along with Networking, Cyber security, Web design and System Admin are my interested IT fields.  </p>
+				</div>
+				
+			</div>
+		</div>
+		<div style="text-align:center">
+		  <h2>Hobby Gallery</h2>
+		  <p>Click on the images to view images on Full Size:</p>
+		</div>
+
+		<!-- <h2 style="text-align:center">Lightbox</h2> -->
+
+		<div class="row">
+		  <div class="columns">
+		    <img src="image/football.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hov-shad cursor">
+		  </div>
+		  <div class="columns">
+		    <img src="image/books.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hov-shad cursor">
+		  </div>
+		  <div class="columns">
+		    <img src="image/gaming.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hov-shad cursor">
+		  </div>
+		  <div class="columns">
+		    <img src="image/travelling.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hov-shad cursor">
+		  </div>
+		</div>
+
+		<div id="myModal" class="modal">
+		  <span class="close cursor" onclick="closeModal()">&times;</span>
+		  <div class="modal-content">
+
+		    <div class="mySlides">
+		      <div class="numbertext">1 / 4</div>
+		      <img src="image/football.jpg" style="width:100%"> <!-- Norin, D. (2020) -->
+		      <!-- Image Reference -->
+		    </div>
+
+		    <div class="mySlides">
+		      <div class="numbertext">2 / 4</div>
+		      <img src="image/books.jpg" style="width:100%"> <!-- Catalog, T. (2018) -->
+		      <!-- Image Reference -->
+		    </div>
+
+		    <div class="mySlides">
+		      <div class="numbertext">3 / 4</div>
+		      <img src="image/gaming.jpg" style="width:100%">  <!-- Post, S. (2019) -->
+		      <!-- Image Reference -->
+		    </div>
+		    
+		    <div class="mySlides">
+		      <div class="numbertext">4 / 4</div>
+		      <img src="image/travelling.jpg" style="width:100%"><!--   English, S. (2018)  -->
+		      <!-- Image Reference -->
+		    </div>
+		    
+		    <a class="previous" onclick="plusSlides(-1)">&#10094;</a>
+		    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+		    <div class="caption-container">
+		      <p id="caption"></p>
+		    </div>
+
+
+		    <div class="columns">
+		      <img class="view cursor" src="image/football.jpg" style="width:100%" onclick="currentSlide(1)" alt="Playing Football">
+		    </div>
+		    <div class="columns">
+		      <img class="view cursor" src="image/books.jpg" style="width:100%" onclick="currentSlide(2)" alt="Reading Books">
+		    </div>
+		    <div class="columns">
+		      <img class="view cursor" src="image/gaming.jpg" style="width:100%" onclick="currentSlide(3)" alt="Online Gaming">
+		    </div>
+		    <div class="columns">
+		      <img class="view cursor" src="image/travelling.jpg" style="width:100%" onclick="currentSlide(4)" alt="Travelling"> 
+		    </div>
+		  </div>
+		</div>
+
+	</main>
+	
+
+<!-- Footer Part	 -->
+	<footer>
+		<div class="footer-logo">
+			<!-- <img src="image/picture.png" height="50px" width="50px" > -->
+<!-- 			<strong>Nischal</strong>
+ -->		<!-- <p>Nischal</p> -->
+ 			<img src="image/icons8.png" width="50px" height="50px" >
+
+		</div>
+		<h3 style="margin-top:3%;"><i class="fa-regular fa-copyright"></i>  Copyright. All Rights Reserved.</h3>	
+		<div class="icon">
+			<h4 style="margin-left:1vh;">Follow me on: </h4>
+				<ul>
+					<li><a href="https://www.facebook.com/hunter.nischal/"><i class="fa-brands fa-facebook fa-xl" style="color:blue"></i></a></li>
+					<li><a href="https://www.instagram.com/atokpas_nischal/"><i class="fa-brands fa-instagram fa-xl" style="color:#d62976"></i></a></li>
+					<li><a href="https://www.linkedin.com/in/nischal-sapkota-2b6411162/"><i class="fa-brands fa-linkedin fa-xl"style=" color:#0A66C2"></i></a></li>
+				</ul>	
+			</div>
+	</footer>
+
+
+
+</script>
+</body>
+</html>

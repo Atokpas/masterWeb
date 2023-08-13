@@ -1,0 +1,937 @@
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	scroll-behavior: smooth;
+}
+
+body{
+	padding: 0.5% 0% 0% 0%; 
+}
+
+header{
+	display: flex;
+	text-align: center;
+	justify-content: space-between;
+	margin:2% 5% 0% 5%;
+}
+
+/**/
+
+.logo{
+	padding-bottom: 0.5%;
+	color:#B2A480;
+}
+.logo .imagesr{
+	/*border-radius: 50%;*/
+		 border-top-left-radius: 50% 50%; 
+	 border-top-right-radius: 50% 50%; 
+	 border-bottom-right-radius: 50% 50%; 
+	 border-bottom-left-radius: 50% 50%; 
+	 width: 40px;
+	 height: 40px;
+
+}
+
+.logo h1{
+	font-family: 'Merriweather',serif;
+}
+
+nav{
+	height: 50px;
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+	/*flex-direction: column;*/
+		padding: 0.5% 4% 0% 4%; 
+
+}
+
+nav ul{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+nav ul li{
+	margin: 0 4% 0 4%;
+	list-style-type: none;
+	color:white;
+}
+nav ul li a {
+	display: block;
+	text-decoration: none;
+	font-size: 20px;
+	color:#B2AF8F;
+}
+
+
+
+
+/*Index Page css code===============================================================*/
+
+.starting-button .but {
+  padding: 15px 31px;
+  text-align: center;
+  font-size: 17px;
+  border: none;
+  background-color: #B2AF8F;
+  margin: 8px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  border-radius: 5% 5%;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+
+  
+.starring-button {
+}
+
+.but:hover 
+  {
+    background-color: #309CEEC4;
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+}
+
+
+/*Index Page animation codes =================*/
+
+.animation {
+  position: relative;
+}
+
+.animation-info {
+  display: inline-block;
+  vertical-align: top;
+  /*margin-top: 1px;*/
+  min-width: 340px;
+  position: relative;
+}
+
+.animation-item {
+  color: #ffc200;
+}
+
+.animation-item {
+  display: block;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  font-size: 33px;
+  line-height: inherit;
+  top: 0;
+  right: 0;
+  left: 0;
+  animation: Movement 8s linear infinite 0s;
+}
+.animation-item:nth-child(2n+2) {
+  animation-delay: 3s;
+}
+.animation-item:nth-child(3n+3) {
+  animation-delay: 5s;
+}
+
+@keyframes Movement {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  10% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  25% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  30% {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+} /*Tooplate (2021)*/
+/*Reference======*/
+
+
+/*Index Page Myself div codes=========*/
+.myself{
+	margin:2% 5% 0% 5%;
+	display: flex;
+}
+.myself .myself-img h1 {
+	margin: 0% 9% 5% 0%;
+	text-align: center;
+	color: #18242EA1;
+}
+
+.myself .myself-img{
+	width: 50%;
+	padding:  3% 7% 5% 5%;
+
+}
+
+.myself-img img{
+	max-width: 100%;
+	border-radius: 5% 5%;
+	/*margin: 10% 10%;*/
+	height: 85vh;
+	display: block; 
+}
+
+.myself-text{
+	width: 50%;
+	padding: 3% 0.1% 5% 10%;
+	letter-spacing: 0.01em;
+	word-spacing: 0.5em;
+	font-family: 'Merriweather',serif;
+	color: #18242EA1;
+    text-align: justify;
+}
+.myself-text .about-network p {
+    font size: 25px;
+    font-weight: 200;    
+}
+
+/*Contact Page codes=========================================================*/
+
+main .cont{
+	text-align: center;
+	padding-bottom: 5%;
+	background-color: #85B4D826;
+	padding: 3% 4% 3% 4%; 
+}
+
+main .formAddress{
+	display: flex;
+	justify-content: space-between;
+		padding: 0% 4% 0% 4%; 
+
+	/*text-align: center;*/
+}
+
+form{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+input{
+	padding: 3%;
+	margin:5vh 1.5vh 2vh 0.3vh ;
+	font-size: 15px;
+}
+input::-webkit-input-placeholder{
+		color: #B2AF8F;
+
+}
+.data{
+	display: flex;
+	justify-content: space-between;
+}
+textarea{
+	padding: 2.5%;
+}
+
+textarea::-webkit-input-placeholder{
+	font-size: 18px;
+	color: #a09d80;
+}
+
+input[type=button] {
+  background-color: #c9c7b0;
+  color: white;
+  padding: 16px 20px;
+  margin: 4px 1px;
+  cursor: pointer;
+  width: 20%;
+  text-align: center;
+  justify-content: center;
+  border: none;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.address{
+	padding: 3% 3% 6% 0%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.map{
+	width: 100%;
+	height: 500px;
+	margin-top: 1%;
+	/*margin-bottom: 1%*/
+		padding: 5% 4% 0% 4%; 
+
+}
+
+/*Footer code*/
+footer{
+	display: flex;
+	justify-content: space-between;
+	/*color: #808080;*/
+	/*background-color: #d8d7c7;*/
+	background-color: #85B4D826;
+		padding: 2% 4% 2% 4%; 
+		color: #18242EA1;
+}
+footer .footer-logo img{
+	margin: 1vh;
+	/*border-radius: 50%;*/
+	 border-top-left-radius: 50% 50%; 
+	 border-top-right-radius: 50% 50%; 
+	 border-bottom-right-radius: 50% 50%; 
+	 border-bottom-left-radius: 50% 50%; 
+
+}
+
+footer .footer-logo p{
+	font-weight: bold;
+}
+footer .icon ul{
+		list-style-type: none;
+		display: flex;	
+}
+footer .icon ul li{
+	margin-top: 3vh;
+	margin-left: 1vh;
+	margin-right: 3vh;
+}
+footer .icon ul li a{
+	color: white;
+}
+
+
+
+/* Resume  Page CSS codes
+==================================================*/
+
+#resume {
+    padding: 101px 0;
+    background: #e7e7dd;
+	padding: 3% 4% 3% 4%; 
+
+}
+#education{
+	padding: 101px 0;
+    /*background: #e7e7dd;*/
+	padding: 3.1% 4.1% 3.1% 4.1%; 
+
+}
+
+.resume-row {
+    padding: 20.5px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.resume-row h3 {
+    font-family: 'Lato', sans-serif;
+    text-transform: capitalize;
+    letter-spacing: 2.1px;
+    /*color: #425BB5;*/
+    font-size: 16.1px;
+    font-weight: bold
+}
+
+.resume-row p {
+    color: #888;
+    margin-top: 20.1px;
+    font-size: 15.1px;
+}
+
+.resume-row .date {
+    color: #000;
+    font-size: 17.1px;
+}
+
+.history {
+    padding-left: 0;
+    list-style: none;
+    position: relative;
+}
+
+.history:before {
+    background-color: black;
+    content: '';
+    margin-left: -1.1px;
+    position: absolute;
+    top: 0;
+    left: 1.9em;
+    width: 3px;
+    height: 100%;
+}
+
+.history-event {
+    position: relative;
+}
+
+.history-event:hover .history-event-icon {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    background-color: #a09d80;
+}
+
+.history-event:hover .history-event-sign {
+    box-shadow: inset 40em 0 0 0 #a09d80;
+}
+
+.history-event-copy {
+    padding: 2em;
+    position: relative;
+    top: -1.875em;
+    left: 4em;
+    width: 100%;
+}
+
+.history-event-copy h3 {
+    font-size: 1.76em;
+}
+
+.history-event-copy h4 {
+    font-size: 1.2em;
+    margin-bottom: 1.2em;
+}
+
+.history-event-copy strong {
+    font-weight: 700;
+}
+
+.history-event-copy p:not(.history-event-sign) {
+    padding-bottom: 1.2em;
+}
+
+.history-event-icon {
+    -webkit-transition: -webkit-transform 0.3s ease-in;
+    transition: -webkit-transform 0.3s ease-in;
+    transition: transform 0.3s ease-in;
+    transition: transform 0.3s ease-in, -webkit-transform 0.2s ease-in;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    background-color: #a09d80;
+    /*#85B4D826*/
+    /*outline: 10px solid #e7e7dd;*/
+    outline: 10px solid #e7e7dd;
+
+    display: block;
+    margin: 0.5em 0.5em 0.5em -0.5em;
+    position: absolute;
+    top: 0;
+    left: 2em;
+    width: 1em;
+    height: 1em;
+}
+
+.educations-event-icon {
+    -webkit-transition: -webkit-transform 0.3s ease-in;
+    transition: -webkit-transform 0.3s ease-in;
+    transition: transform 0.3s ease-in;
+    transition: transform 0.3s ease-in, -webkit-transform 0.2s ease-in;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    background-color: #a09d80;
+    /*#85B4D826*/
+    /*outline: 10px solid #e7e7dd;*/
+    outline: 10px solid #85B4D826;
+
+    display: block;
+    margin: 0.5em 0.5em 0.5em -0.5em;
+    position: absolute;
+    top: 0;
+    left: 2em;
+    width: 1em;
+    height: 1em;
+}
+
+
+.history-event-sign {
+    -moz-transition: box-shadow 0.5s ease-in 0.1s;
+    -o-transition: box-shadow 0.5s ease-in 0.1s;
+    -webkit-transition: box-shadow 0.5s ease-in;
+    -webkit-transition-delay: 0.1s;
+    -webkit-transition: box-shadow 0.5s ease-in 0.1s;
+    transition: box-shadow 0.5s ease-in 0.1s;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: black;
+    box-shadow: inset 0 0 0 0em #a09d80;
+    display: inline-block;
+    margin-bottom: 1.2em;
+    padding: 0.25em 1em 0.2em 1em;
+} /*   Essa, A. (2019)   */
+/*Reference for Animation*/
+
+
+
+
+
+/*index page css code==============================================================*/
+
+.start-text{
+	display: flex;
+	/*flex-wrap: wrap;*/
+}
+.about-text{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	padding: 5% 0% 0% 5%;
+	letter-spacing: 0.5px;
+	word-spacing: 1.5px;
+}
+
+.small-text {
+  color: #5b5b5b;
+  font-size: 1.1em;
+  font-weight: bold;
+
+}
+
+.about-text h1 {
+  color: #212121;
+  font-size: 2em;
+  margin: 4.8vh 0;
+}
+
+.about-text p {
+  font-size: 1.3em;
+  /*font-weight: 300;*/
+  color: #5b5b5b;
+}
+
+
+.about-img{
+	width: 50%;
+	padding: 5% 0% 3% 14%;
+}
+
+.about-img img{
+	max-width: 100%;
+	height: 80vh;
+	display: block; 
+	text-align: center;
+}
+
+/*About Page CSS code =======================================*/
+
+
+.about-title h1{
+    text-align: center;
+    padding-bottom: 5%;
+    background-color: #85B4D826;
+    padding: 3% 4% 3% 4%; 
+}
+
+.row{
+  margin: 5%; 
+}
+.row > .columns {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.columns {
+  float: left;
+  width: 25%;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 50px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  /*background-color: #c0c0c0;*/
+  background-color: #0009;
+}
+
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.previous,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.previous:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: #c0c0c0;
+  padding: 5px 16px;
+  color: black;
+}
+
+.view {
+  opacity: 0.6;
+}
+
+.active,
+.view:hover {
+  opacity: 1;
+}
+
+img.hov-shad {
+  transition: 0.3s;
+}
+
+.hov-shad:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+} 
+
+/* How to - lightbox (2023) */
+/* Reference */
+
+
+
+/*Skills Page css code =========================================================*/
+
+.skills-title{
+	text-align: center;
+	padding-bottom: 5%;
+	background-color: #85B4D826;
+	padding: 3% 4% 3% 4%; 
+}
+.skills{
+	display: flex;
+	justify-content: space-between;
+	margin: 3% 5% 3% 5%;
+}
+main .skills-title{
+	display: block;
+}
+
+.web{
+    position: relative;
+    max-width: 501px;
+    width: 100%;
+    background: #fff;
+    margin: 0 15.5px;
+    padding: 11px 21px;
+    border-radius: 8px;
+}
+.web .web-skill-box{
+    width: 100%;
+    margin: 26px 0;
+}
+.web-skill-box .title{
+    display: block;
+    font-size: 15px;
+    font-weight: 601;
+    color: #333;
+}
+.web-skill-box .web-skill-bar{
+    height: 8.5px;
+    width: 100%;
+    border-radius: 7px;
+    margin-top: 6.5px;
+    background: rgba(0,0,0,0.1);
+}
+.web-skill-bar .web-skill-per{
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 65%;
+    border-radius: 7px;
+    background: #309CEEC4;
+    animation: webprogress 0.5s ease-in-out forwards;
+    opacity: 0;
+}
+.web-skill-per.css{
+    width: 60%;
+    animation-delay: 0.2s;
+}
+.web-skill-per.javascript{
+    width: 40%;
+    animation-delay: 0.3s;
+}
+.web-skill-per.bootstrap{
+    width: 30%;
+    animation-delay: 0.4s;
+}
+@keyframes webprogress {
+    0%{
+        width: 0;
+        opacity: 1.1;
+    }
+    100%{
+        opacity: 1.1;
+    }
+}
+.web-skill-per .tooltip{
+    position: absolute;
+    right: -14.5px;
+    top: -29px;
+    font-size: 10px;
+    font-weight: 501;
+    color: #fff;
+    padding: 1px 7px;
+    border-radius: 4px;
+    background: #309CEEC4;
+    z-index: 1;
+}
+.web .tooltip::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -3px;
+    height: 11px;
+    width: 11px;
+    z-index: -1;
+    background-color: #309CEEC4;
+    transform: translateX(-50%) rotate(45deg);
+}
+
+/*networking progress bar*/
+.network{
+    position: relative;
+    max-width: 501px;
+    width: 100%;
+    background: #fff;
+    margin: 0 16px;
+    padding: 11px 21px;
+    border-radius: 8px;
+}
+.network .network-skill-box{
+    width: 100%;
+    margin: 26px 0;
+}
+.network-skill-box .title{
+    display: block;
+    font-size: 15px;
+    font-weight: 601;
+    color: #333;
+}
+.network-skill-box .network-skill-bar{
+    height: 8px;
+    width: 100%;
+    border-radius: 7px;
+    margin-top: 7px;
+    background: rgba(0,0,0,0.1);
+}
+.network-skill-bar .network-skill-per{
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 85%;
+    border-radius: 7px;
+    background: #309CEEC4;
+    animation: netprogress 0.5s ease-in-out forwards;
+    opacity: 0;
+}
+.network-skill-per.config{
+    width: 80%;
+    animation-delay: 0.2s;
+}
+.network-skill-per.routing{
+    width: 75%;
+    animation-delay: 0.3s;
+}
+.network-skill-per.security{
+    width: 50%;
+    animation-delay: 0.4s;
+}
+@keyframes netprogress {
+    0%{
+        width: 0;
+        opacity: 1.1;
+    }
+    100%{
+        opacity: 1.1;
+    }
+}
+.network-skill-per .tooltip{
+    position: absolute;
+    right: -15px;
+    top: -29px;
+    font-size: 10px;
+    font-weight: 501;
+    color: #fff;
+    padding: 3px 7px;
+    border-radius: 4px;
+    background: #309CEEC4;
+    z-index: 1;
+}
+.network .tooltip::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -3px;
+    height: 11px;
+    width: 11px;
+    z-index: -1;
+    background-color: #309CEEC4;
+    transform: translateX(-50%) rotate(45deg);
+}
+
+
+/*Ethical Hacker Skills CSS codes*/
+.ethical-cont{
+	margin: 5%;
+}
+.ethical{
+    position: relative;
+    max-width: 501px;
+    width: 100%;
+    background: #fff;
+    margin: 0 16px;
+    padding: 11px 21px;
+    border-radius: 8px;
+}
+.ethical .ethical-skill-box{
+    width: 100%;
+    margin: 26px 0;
+}
+.ethical-skill-box .title{
+    display: block;
+    font-size: 15px;
+    font-weight: 601;
+    color: #333;
+}
+.ethical-skill-box .ethical-skill-bar{
+    height: 8px;
+    width: 100%;
+    border-radius: 7px;
+    margin-top: 7px;
+    background: rgba(0,0,0,0.1);
+}
+.ethical-skill-bar .ethical-skill-per{
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 70%;
+    border-radius: 7px;
+    background: #309CEEC4;
+    animation: ethicalprogress 0.5s ease-in-out forwards;
+    opacity: 0;
+}
+.ethical-skill-per.config{
+    width: 65%;
+    animation-delay: 0.2s;
+}
+.ethical-skill-per.routing{
+    width: 60%;
+    animation-delay: 0.3s;
+}
+.ethical-skill-per.security{
+    width: 60%;
+    animation-delay: 0.4s;
+}
+@keyframes ethicalprogress {
+    0%{
+        width: 0;
+        opacity: 1.1;
+    }
+    100%{
+        opacity: 1.1;
+    }
+}
+.ethical-skill-per .tooltip{
+    position: absolute;
+    right: -15px;
+    top: -29px;
+    font-size: 10px;
+    font-weight: 501;
+    color: #fff;
+    padding: 3px 7px;
+    border-radius: 4px;
+    background: #309CEEC4;
+    z-index: 1;
+}
+.ethical .tooltip::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -3px;
+    height: 11px;
+    width: 11px;
+    z-index: -1;
+    background-color: #309CEEC4;
+    transform: translateX(-50%) rotate(45deg);
+} /*   CodingNepal (2022) */
+/* Reference of Progress bar*/
+
